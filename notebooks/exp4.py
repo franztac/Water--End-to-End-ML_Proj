@@ -89,9 +89,9 @@ with mlflow.start_run(run_name="Random Forest Tuning") as parent_run:
     # Save the trained model to a file for later use
     pickle.dump(best_rf, open("model.pkl", "wb"))
 
-    # Prepare test data
-    X_test = test_processed_data.iloc[:, 0:-1].values
-    y_test = test_processed_data.iloc[:, -1].values
+    # Prepare the test data by separating features and target variable
+    X_test = test_processed_data.drop(columns=["Potability"], axis=1)  # Features
+    y_test = test_processed_data["Potability"]  # Target variable
 
     # Load the saved model from the file
     model = pickle.load(open("model.pkl", "rb"))
