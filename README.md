@@ -55,3 +55,8 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+
+----------------
+Teacher Source Code:
+https://github.com/DataThinkers/End-to-End-Machine-Learning-Portfolio-Project-MLOps-DVC-Pipeline
